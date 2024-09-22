@@ -8,7 +8,7 @@
 SELECT
     t2.seller_state AS 'estados',
     COUNT(DISTINCT t1.seller_id) AS 'qtde_vendedores',    
-    SUM(t1.price) / COUNT(DISTINCT t1.seller_id) AS 'receita_media_vendedor'
+    ROUND(SUM(t1.price) / COUNT(DISTINCT t1.seller_id), 2) AS 'receita_media_vendedor'
 
 FROM 
     tb_order_items AS t1

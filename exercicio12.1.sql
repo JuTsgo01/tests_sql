@@ -7,7 +7,7 @@
 /* Resultado 2: receita por estado*/
 SELECT 
     t2.customer_state AS 'estado_cliente',
-    SUM(t3.price)  AS 'faturamento'
+    ROUND(SUM(t3.price), 2)  AS 'faturamento'
 
 FROM 
     tb_orders AS t1
