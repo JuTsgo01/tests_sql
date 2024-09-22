@@ -4,10 +4,10 @@
 --OBS: considere a base completa e com apenas pedidos que foram entregue
 
 
--- Resultado 1: receita média por cliente por estado
+/* Resultado 2: receita por estado*/
 SELECT 
     t2.customer_state AS 'estado_cliente',
-    SUM(t3.price) / COUNT(DISTINCT t1.customer_id) AS 'receita_media_cliente'
+    SUM(t3.price)  AS 'faturamento'
 
 FROM 
     tb_orders AS t1
@@ -27,7 +27,3 @@ WHERE t1.order_status = 'delivered'
 GROUP BY t2.customer_state
 
 ORDER BY 2 DESC;
-
-
-
-

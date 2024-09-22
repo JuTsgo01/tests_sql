@@ -1,11 +1,14 @@
 -- Qual o valor todal de receita gerada por vendedores de cada estado
 -- Considere a base completa e apenas pedidos entregues
 
-SELECT
-    t1.seller_id AS 'id_vendedores',
-    sum(t1.price) AS 'faturamento',
-    t2.seller_state AS 'estados'
+-- Estado com maior média de faturamento por vendedor é SP e também é o que mais possui vendedores
+-- Ou seja, se é a média mais alta com mais vendedores, o faturamento total do estado é maior que de todos os outros
 
+
+SELECT
+    t2.seller_state AS 'estados',
+    COUNT(DISTINCT t1.seller_id) AS 'qtde_vendedores',    
+    SUM(t1.price) / COUNT(DISTINCT t1.seller_id) AS 'receita_media_vendedor'
 
 FROM 
     tb_order_items AS t1
@@ -26,7 +29,7 @@ WHERE
     t3.order_status = 'delivered' --selecionando apenas pedidos entregues
 
 GROUP BY
-    t1.seller_id, t2.seller_state
+    t2.seller_state
 
-ORDER BY
-    t1.price DESC
+ORDER BY 2 DESC
+
