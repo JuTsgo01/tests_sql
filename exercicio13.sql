@@ -3,7 +3,7 @@
 
 SELECT
     t1.seller_id AS 'id_vendedores',
-    sum(t1.price) AS 'faturamento',
+    ROUND(sum(t1.price), 2) AS 'faturamento',
     t2.seller_state AS 'estados'
 
 
