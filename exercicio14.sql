@@ -4,7 +4,7 @@
 
 SELECT 
     t1.seller_id AS 'vendedor',
-    AVG(t3.product_weight_g) AS 'peso_medio',
+    ROUND(AVG(t3.product_weight_g), 2) AS 'peso_medio',
     t4.seller_state AS 'estado'
 
 
