@@ -2,7 +2,7 @@
 
 Lista de exercícios feitos com SQL
 
-OBS: 'Olist.db' aidiconado no 'git ignore' é para que ele não suba no commit, pois é superior a 100mb. 
+OBS: O arquivo 'Olist.db' foi adiconado no 'git ignore' para que ele não suba no commit, pois é superior a 100mb. 
 
 Caso você deseja usar o banco de dados, segue o link:
 
