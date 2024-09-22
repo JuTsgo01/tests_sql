@@ -6,5 +6,5 @@ OBS: O arquivo 'Olist.db' foi adiconado no 'git ignore' para que ele não suba n
 
 Caso você deseja usar o banco de dados, segue o link:
 
-[banco de dados do Téo Calvo](https://drive.google.com/file/d/1YEohXFk7zSajy3Nitzi_svDnu9x4ZFn8/view)
+[Link para o Banco de dados do Téo Calvo](https://drive.google.com/file/d/1YEohXFk7zSajy3Nitzi_svDnu9x4ZFn8/view)
 
