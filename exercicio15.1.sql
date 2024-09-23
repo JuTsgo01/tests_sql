@@ -45,9 +45,9 @@ tb_status_vendas as(
 tb_receita_produto_estado AS (
         
     SELECT 
-        t3.seller_state AS 'estado',
+        t3.seller_state AS estado,
         t2.product_id,
-        ROUND(SUM(t1.price), 2) AS 'receita',
+        ROUND(SUM(t1.price), 2) AS receita,
         t2.product_category_name
 
     FROM 

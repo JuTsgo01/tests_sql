@@ -3,9 +3,9 @@
 -- Usei a a data da aprovação da venda, pois se foi aprovado, foi vendido
 
 SELECT 
-    t4.seller_state AS 'estado',
-    COUNT(DISTINCT t1.seller_id) AS 'qtde_vendedore',
-    AVG(t3.product_weight_g) AS 'peso_medio_vendedor'
+    t4.seller_state AS estado,
+    COUNT(DISTINCT t1.seller_id) AS qtde_vendedore,
+    AVG(t3.product_weight_g) AS peso_medio_vendedor
 
 
 FROM

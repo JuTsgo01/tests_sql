@@ -1,15 +1,15 @@
 SELECT CASE WHEN tb_products.product_category_name IS NULL THEN 'outros'
-            ELSE tb_products.product_category_name END AS 'categoria_produto',
+            ELSE tb_products.product_category_name END AS categoria_produto,
 
-        ROUND(SUM(tb_order_items.price), 2) AS 'faturamento',
+        ROUND(SUM(tb_order_items.price), 2) AS faturamento,
 
-        ROUND(SUM(tb_order_items.freight_value), 2) AS 'despesa_frete',
+        ROUND(SUM(tb_order_items.freight_value), 2) AS despesa_frete,
 
-        COUNT(DISTINCT tb_order_items.product_id) AS 'qtde_produto_vendido',
+        COUNT(DISTINCT tb_order_items.product_id) AS qtde_produto_vendido,
 
-        tb_orders.order_approved_at AS 'data_aprovacao',
+        tb_orders.order_approved_at AS data_aprovacao,
 
-        tb_orders.order_status AS 'status_pedido' 
+        tb_orders.order_status AS status_pedido 
 
 FROM tb_products
 

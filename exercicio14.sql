@@ -3,9 +3,9 @@
 -- Usei a a data da aprovação da venda, pois se foi aprovado, foi vendido
 
 SELECT 
-    t1.seller_id AS 'vendedor',
-    ROUND(AVG(t3.product_weight_g), 2) AS 'peso_medio',
-    t4.seller_state AS 'estado'
+    t1.seller_id AS vendedor,
+    ROUND(AVG(t3.product_weight_g), 2) AS peso_medio,
+    t4.seller_state AS estado
 
 
 FROM

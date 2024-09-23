@@ -6,8 +6,8 @@
 
 -- Resultado 1: receita média por cliente por estado
 SELECT 
-    t2.customer_state AS 'estado_cliente',
-    ROUND(SUM(t3.price) / COUNT(DISTINCT t1.customer_id), 2) AS 'receita_media_cliente'
+    t2.customer_state AS estado_cliente,
+    ROUND(SUM(t3.price) / COUNT(DISTINCT t1.customer_id), 2) AS receita_media_cliente
 
 FROM 
     tb_orders AS t1

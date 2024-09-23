@@ -11,7 +11,7 @@ SELECT DISTINCT
 
     ELSE product_category_name END
     
-    AS 'categorias_fillna'
+    AS categorias_fillna
 
 FROM tb_products
 

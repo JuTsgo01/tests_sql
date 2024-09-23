@@ -1,5 +1,5 @@
-SELECT seller_state AS 'estados',
-    COUNT(DISTINCT seller_id) AS 'qtde_vendedor'
+SELECT seller_state AS estados,
+    COUNT(DISTINCT seller_id) AS qtde_vendedor
 
 FROM tb_sellers
 

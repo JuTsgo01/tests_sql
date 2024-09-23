@@ -9,9 +9,9 @@ Ter como resultado: faturamento e qtd do produtos vendidos da categoria cama mes
 
 
 SELECT 
-    t3.seller_state AS 'estado',
+    t3.seller_state AS estado,
     t2.product_id,
-    ROUND(SUM(t1.price), 2) AS 'receita'
+    ROUND(SUM(t1.price), 2) AS receita
 
 FROM 
     tb_order_items AS t1
