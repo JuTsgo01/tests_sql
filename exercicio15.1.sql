@@ -24,6 +24,18 @@ WITH tb_melhor_categoria AS (
     LIMIT 1
 ),
 
+tb_status_vendas as(
+
+    SELECT 
+        *
+    
+    FROM 
+        tb_orders AS t1
+    
+    WHERE
+        t1.order_status = 'delivered'
+),
+
 tb_receita_produto_estado AS (
         
     SELECT 
@@ -55,18 +67,6 @@ tb_receita_produto_estado AS (
         t2.product_id
 
     ORDER BY 3 DESC
-),
-
-tb_status_vendas as(
-
-    SELECT 
-        *
-    
-    FROM 
-        tb_orders AS t1
-    
-    WHERE
-        t1.order_status = 'delivered'
 )
 
 SELECT 
