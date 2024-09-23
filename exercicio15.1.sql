@@ -12,22 +12,28 @@ Onde o Status do produto seja entregue
 WITH tb_melhor_categoria AS (
 
     SELECT t2.product_category_name
+
     FROM 
         tb_order_items AS t1
+
     INNER JOIN
         tb_products AS t2
-    ON t1.product_id = t2.product_id
+
+    ON 
+        t1.product_id = t2.product_id
+
     GROUP BY
         t2.product_category_name
+
     ORDER BY
         count(*) DESC
+
     LIMIT 1
 ),
 
 tb_status_vendas as(
 
-    SELECT 
-        *
+    SELECT *
     
     FROM 
         tb_orders AS t1
@@ -59,7 +65,9 @@ tb_receita_produto_estado AS (
     
     INNER JOIN
         tb_status_vendas AS t4
-    ON t1.order_id = t4.order_id
+
+    ON 
+        t1.order_id = t4.order_id
 
 
     GROUP BY 
@@ -82,7 +90,7 @@ INNER JOIN
     tb_melhor_categoria AS t2
 
 ON
-t1.product_category_name = t2.product_category_name
+    t1.product_category_name = t2.product_category_name
 
 
 
