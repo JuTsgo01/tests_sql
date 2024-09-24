@@ -37,7 +37,6 @@ tb_seller_sort AS (
 
     FROM
         tb_seller_product
-
 )
 
 SELECT 
