@@ -18,6 +18,8 @@ OBS: O arquivo 'Olist.db' foi adiconado no 'git ignore' para que ele não suba n
 Caso você deseja usar o banco de dados, segue o link:
 
 [Link repositório do professor Téo Calvo](https://github.com/TeoCalvo/teoSQL-V2)
+
 [Link para o Banco de dados do Téo Calvo](https://drive.google.com/file/d/1YEohXFk7zSajy3Nitzi_svDnu9x4ZFn8/view)
+
 [Site onde treino diariamento](https://www.sql-practice.com/)
 
