@@ -8,7 +8,7 @@ Lista de exercícios feitos com SQL
     - WHERE
     - GROUP e ORDER BY
     - HAVING
-    - CASE, ISNULL, COALESCE, DISTINCT, COUNT, SUM, AVG, MAX e MIN
+    - CASE, ISNULL, THEN, COALESCE, DISTINCT, COUNT, SUM, AVG, MAX e MIN
     - JOIN'S
     - SUBQUERYS
     - WINDOW FUNCTIONS	
