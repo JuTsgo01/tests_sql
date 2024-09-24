@@ -48,4 +48,4 @@ FROM
     tb_seller_sort
 
 WHERE
-    order_enumerate = 1
+    order_enumerate <= 5
