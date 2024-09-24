@@ -21,5 +21,5 @@ Caso você deseja usar o banco de dados, segue o link:
 
 [Link para o Banco de dados do Téo Calvo](https://drive.google.com/file/d/1YEohXFk7zSajy3Nitzi_svDnu9x4ZFn8/view)
 
-[Site onde treino diariamento](https://www.sql-practice.com/)
+[Site onde treino SQL e aprendo inglês diariamente](https://www.sql-practice.com/)
 
