@@ -5,8 +5,8 @@ For every admission, display the patient's full name, their admission diagnosis,
 
 SELECT
 	t2.first_name || ' ' || t2.last_name AS full_name_patient,
-    t1.diagnosis,
-    t3.first_name || ' ' || t3.last_name AS full_name_doctor
+    	t1.diagnosis,
+    	t3.first_name || ' ' || t3.last_name AS full_name_doctor
     
 
 FROM
