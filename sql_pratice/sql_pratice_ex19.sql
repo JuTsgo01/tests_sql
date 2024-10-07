@@ -4,7 +4,7 @@ Display the total amount of patients for each province. Order by descending.
 
 SELECT
 	t2.province_name,
-    COUNT(DISTINCT patient_id) AS qtde_patient_province
+    	COUNT(DISTINCT patient_id) AS qtde_patient_province
 FROM
 	patients AS t1
 
