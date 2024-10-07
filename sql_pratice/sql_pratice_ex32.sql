@@ -4,9 +4,9 @@ For each day display the total amount of admissions on that day. Display the amo
 
 WITH tb_count_day_admission AS (
   
-  SELECT 
-  		admission_date,
-		COUNT(*) AS qtd_admission_day
+  SELECT
+	admission_date,
+	COUNT(*) AS qtd_admission_day
   FROM
       admissions
 
@@ -15,7 +15,7 @@ WITH tb_count_day_admission AS (
 
 ),
 
-  tb_with_lag_admission_day AS (
+tb_with_lag_admission_day AS (
 
   SELECT 
       *,
@@ -29,8 +29,8 @@ WITH tb_count_day_admission AS (
 
 SELECT
 	admission_date,
-    qtd_admission_day,
-    (qtd_admission_day - lag_admission_day) AS diff_day_lagday_admission
+    	qtd_admission_day,
+    	(qtd_admission_day - lag_admission_day) AS diff_day_lagday_admission
     
 FROM
 	tb_with_lag_admission_day
