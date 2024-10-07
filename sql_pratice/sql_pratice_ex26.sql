@@ -7,9 +7,9 @@ Check patients, admissions, and doctors tables for required information.
 
 SELECT
 	t1.patient_id,
-    t1.first_name,
-    t1.last_name,
-    t3.specialty
+    	t1.first_name,
+	t1.last_name,
+	t3.specialty
 
 FROM
 	patients AS t1
