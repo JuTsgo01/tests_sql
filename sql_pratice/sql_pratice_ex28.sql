@@ -8,16 +8,15 @@ Add up the admission_total cost for each has_insurance group.
 
 
 SELECT
-
-    (CASE
-    	WHEN CAST(patient_id AS INTEGER)%2 = 0 THEN 'Yes'
+	(CASE
+    		WHEN CAST(patient_id AS INTEGER)%2 = 0 THEN 'Yes'
 		ELSE 'No'      
-    END) AS yes_or_no,
+	END) AS yes_or_no,
     
 	SUM(CASE
-    	WHEN CAST(patient_id AS INTEGER)%2 = 0 THEN 10
+    		WHEN CAST(patient_id AS INTEGER)%2 = 0 THEN 10
 		ELSE 50    
-    END) AS cost
+    	END) AS cost
     
 FROM 
 	admissions
