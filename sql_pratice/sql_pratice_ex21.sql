@@ -4,9 +4,9 @@ Ex: A patient with an identical name can be considered a duplicate.
 */
 
 SELECT
-    first_name,
-    last_name,
-    COUNT(*)
+    	first_name,
+    	last_name,
+    	COUNT(*)
 
 FROM
 	patients

@@ -11,7 +11,7 @@ The password must be the following, in order:
 
 SELECT
 	DISTINCT(t1.patient_id),
-    CAST(t1.patient_id AS INTEGER)||CAST(len(t2.last_name) AS INTEGER)||CAST(year(t2.birth_date) AS INTEGER)
+    	CAST(t1.patient_id AS INTEGER)||CAST(len(t2.last_name) AS INTEGER)||CAST(year(t2.birth_date) AS INTEGER)
     
     
 FROM
@@ -20,4 +20,5 @@ FROM
 INNER JOIN
 	patients AS t2
 
-ON t1.patient_id = t2.patient_id
+ON 
+	t1.patient_id = t2.patient_id

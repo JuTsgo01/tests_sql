@@ -5,16 +5,16 @@ Every admission has been attended by a doctor.
 
 SELECT
 	t2.first_name,
-    t2.last_name,
-    count(*) AS admissions_total
+    	t2.last_name,
+    	count(*) AS admissions_total
     
 FROM
-    admissions AS t1
+    	admissions AS t1
 
 INNER JOIN
-    doctors AS t2
+    	doctors AS t2
 ON
-    t1.attending_doctor_id = t2.doctor_id
+    	t1.attending_doctor_id = t2.doctor_id
 
 GROUP BY
-    t1.attending_doctor_id
+    	t1.attending_doctor_id

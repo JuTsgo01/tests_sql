@@ -8,11 +8,11 @@ height is in units cm.
 
 SELECT
 	patient_id,
-    weight,
-    height,
-    (CASE
-    	WHEN CAST(weight AS FLOAT) / POWER(CAST(height AS FLOAT) / 100, 2) >= 30 THEN 1
-        ELSE 0
+    	weight,
+    	height,
+    	(CASE
+    		WHEN CAST(weight AS FLOAT) / POWER(CAST(height AS FLOAT) / 100, 2) >= 30 THEN 1
+        	ELSE 0
 	END) AS isObese 
 
     

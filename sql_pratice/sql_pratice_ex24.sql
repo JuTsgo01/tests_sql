@@ -12,7 +12,7 @@ Pesquisei e conheci a função 'FLOOR' que foi a usada nessa query
 
 SELECT
 	COUNT(*) AS qte_paciente_grupo_peso,
-    FLOOR(weight/10)*10 AS grupo_peso
+	FLOOR(weight/10)*10 AS grupo_peso
 FROM
 	patients
 GROUP BY
@@ -20,4 +20,4 @@ GROUP BY
 
 ORDER BY
 	FLOOR(weight/10)*10 
-    DESC
+	DESC
