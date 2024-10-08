@@ -6,4 +6,5 @@ SELECT
 	province_name
 FROM
 	province_names
-ORDER BY IIF(province_name = "Ontario", 0, 1), province_name
+ORDER BY 
+	IIF(province_name = "Ontario", 0, 1), province_name
