@@ -1,33 +1,21 @@
 /*
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| name        | varchar |
-| continent   | varchar |
-| area        | int     |
-| population  | int     |
-| gdp         | bigint  |
-+-------------+---------+
-name is the primary key (column with unique values) for this table.
-Each row of this table gives information about the name of a country, the continent to which it belongs, its area, the population, and its GDP value.
++----------------+---------+
+| Column Name    | Type    |
++----------------+---------+
+| tweet_id       | int     |
+| content        | varchar |
++----------------+---------+
+tweet_id is the primary key (column with unique values) for this table.
+This table contains all the tweets in a social media app.
  
 
-A country is big if:
-
-it has an area of at least three million (i.e., 3000000 km2), or
-it has a population of at least twenty-five million (i.e., 25000000).
-Write a solution to find the name, population, and area of the big countries.
+Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
 
 Return the result table in any order.
 */
 
 SELECT
-    t1.name,
-    t1.population,
-    t1.area
+    tweet_id
 FROM
-    World AS t1
-WHERE
-    t1.area >= 3000000
-    OR
-    t1.population >= 25000000
+    Tweets
+WHERE LENGTH(content) > 15
