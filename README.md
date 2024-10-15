@@ -11,7 +11,9 @@ Lista de exercícios feitos com SQL
     - CASE, ISNULL, THEN, COALESCE, DISTINCT, COUNT, SUM, AVG, MAX e MIN
     - JOIN'S
     - SUBQUERYS
-    - WINDOW FUNCTIONS	
+    - WINDOW FUNCTIONS
+    - LAG, FLOOR, POWER, CAST, LAG, OVER, IFF
+    - E muito pensamento analitico.	
 
 OBS: O arquivo 'Olist.db' foi adiconado no 'git ignore' para que ele não suba no commit, pois é superior a 100mb. 
 
