@@ -28,6 +28,7 @@ Return the result table ordered by percentage in descending order. In case of a 
 */
 
 WITH tb_count_contest_id AS (
+
     SELECT
         t2.contest_id,
         CAST(COUNT(*) AS FLOAT) AS count_contest_id
