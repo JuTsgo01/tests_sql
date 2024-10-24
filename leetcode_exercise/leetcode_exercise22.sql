@@ -66,7 +66,7 @@ WHERE
 
 
 /*
-Segunda opição seria retirar o "CASE WHEN" da "tb_named_pref_delivery", usado para dar nome ao tipo. 
+Segunda opção seria retirar o "CASE WHEN" da "tb_named_pref_delivery", usado para dar nome ao tipo. 
 
 FICARIA ASSIM:
 */
