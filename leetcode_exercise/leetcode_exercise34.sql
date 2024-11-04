@@ -27,8 +27,8 @@ WITH tb_row_number AS (
         Logs AS t1
     
     WHERE 1=1
-    AND t1.id IS NOT NULL
-    AND t1.num IS NOT NULL
+        AND t1.id IS NOT NULL
+        AND t1.num IS NOT NULL
 )
 
 SELECT
