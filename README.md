@@ -2,12 +2,11 @@
 >
 Lista de exercícios feitos com SQL
 
-- Na pasta "leetcode_exercise"
+- Na pasta "leetcode_exercise_top_50_sql" estão as resoluções de todos os exercícios que fiz da trilha "Crack SQL Interview in 50 Qs" da plataforma LeetCode
 
-- Na pasta "sql_pratice_exercise"
+- Na pasta "sql_pratice_exercise" estão as resoluções de todos os exercícios que fiz do site "SQL-Pratice"
 
-
-teo_exercise
+- Na pasta teo_exercise estão as resoluções de todos os exercícios prospostos pelo Téo em aula
 
 - Aulas de SQL onde aprendi os seguntes tópicos até o momento:
 
