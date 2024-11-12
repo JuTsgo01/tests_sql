@@ -2,6 +2,13 @@
 >
 Lista de exercícios feitos com SQL
 
+- Na pasta "leetcode_exercise"
+
+- Na pasta "sql_pratice_exercise"
+
+
+teo_exercise
+
 - Aulas de SQL onde aprendi os seguntes tópicos até o momento:
 
     - SELECT
