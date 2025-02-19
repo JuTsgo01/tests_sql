@@ -8,19 +8,6 @@ Lista de exercícios feitos com SQL
 
 - Na pasta teo_exercise estão as resoluções de todos os exercícios prospostos pelo Téo em aula
 
-- Aulas de SQL onde aprendi os seguntes tópicos até o momento:
-
-    - SELECT
-    - WHERE
-    - GROUP e ORDER BY
-    - HAVING
-    - CASE, ISNULL, THEN, COALESCE, DISTINCT, COUNT, SUM, AVG, MAX e MIN
-    - JOIN'S
-    - SUBQUERYS
-    - WINDOW FUNCTIONS
-    - LAG, FLOOR, POWER, CAST, LAG, OVER, IFF
-    - E muito pensamento analitico.	
-
 OBS: O arquivo 'Olist.db' foi adiconado no 'git ignore' para que ele não suba no commit, pois é superior a 100mb. 
 
 Caso você deseja usar o banco de dados, segue o link:
